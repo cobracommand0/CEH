@@ -1,0 +1,85 @@
+As a professional ethical hacker, during information gathering, you need to gather personal information about employees working in critical positions in the target organization; for example, the Chief Information Security Officer, Security Architect, or Network Administrator. By footprinting through social networking sites, you can extract personal information such as name, position, organization name, current location, and educational qualifications. Further, you can find professional information such as company or business, current location, phone number, email ID, photos, videos, etc. The information gathered can be useful to perform social engineering and other types of advanced attacks.
+
+Lab Objectives
+
+Gather employees’ information from LinkedIn using theHarvester
+Gather personal information from various social networking sites using Sherlock
+Gather information using Followerwonk
+Overview of Social Networking Sites
+
+Social networking sites are online services, platforms, or other sites that allow people to connect and build interpersonal relations. People usually maintain profiles on social networking sites to provide basic information about themselves and to help make and maintain connections with others; the profile generally contains information such as name, contact information (cellphone number, email address), friends’ information, information about family members, their interests, activities, etc. On social networking sites, people may also post their personal information such as date of birth, educational information, employment background, spouse’s names, etc. Organizations often post information such as potential partners, websites, and upcoming news about the company. Thus, social networking sites often prove to be valuable information resources. Examples of such sites include LinkedIn, Facebook, Instagram, Twitter, Pinterest, YouTube, etc.
+
+Task 1: Gather Employees’ Information from LinkedIn using theHarvester
+LinkedIn is a social networking website for industry professionals. It connects the world’s human resources to aid productivity and success. The site contains personal information such as name, position, organization name, current location, educational qualifications, etc.
+
+Here, we will gather information about the employees (name and job title) of a target organization that is available on LinkedIn using theHarvester tool.
+
+Click Parrot Security to switch to the Parrot Security machine.
+
+Click the MATE Terminal icon at the top-left corner of the Desktop window to open a Terminal window.
+
+A Parrot Terminal window appears. In the terminal window, type sudo su and press Enter to run the programs as a root user.
+
+In the [sudo] password for attacker field, type toor as a password and press Enter.
+
+The password that you type will not be visible.
+
+Now, type cd and press Enter to jump to the root directory.
+
+A Parrot Terminal window appears. In the terminal window, type theHarvester -d eccouncil -l 200 -b linkedin and press Enter to see 200 results of EC-Council from the LinkedIn source.
+
+In this command, -d specifies the domain or company name to search (here, eccouncil), -l specifies the number of results to be retrieved, and -b specifies the data source as LinkedIn.
+
+The complete eccouncil domain is eccouncil.org.
+
+Scroll down to view the list of employees of the EC-Council.
+
+This concludes the demonstration of gathering employees' information from LinkedIn using theHarvester.
+
+Close all open windows and document all the acquired information.
+
+Task 2: Gather Personal Information from Various Social Networking Sites using Sherlock
+Sherlock is a python-based tool that is used to gather information about a target person over various social networking sites. Sherlock searches a vast number of social networking sites for a given target user, locates the person, and displays the results along with the complete URL related to the target person.
+
+In the Parrot Security machine, click the MATE Terminal icon at the top-left corner of the Desktop window to open a Terminal window.
+
+A Parrot Terminal window appears. In the terminal window, type sudo su and press Enter to run the programs as a root user.
+
+In the [sudo] password for attacker field, type toor as a password and press Enter.
+
+The password that you type will not be visible.
+
+Now, type cd and press Enter to jump to the root directory.
+
+Type cd sherlock/sherlock/ and press Enter to navigate to the sherlock folder.
+
+Type python3 sherlock.py satya nadella and press Enter. You will get all the URLs related to Satya Nadella, as shown in the screenshot. Scroll down to view all the results.
+
+This concludes the demonstration of gathering person information from various social networking sites using Sherlock.
+
+You can also use tools such as Social Searcher (https://www.social-searcher.com), UserRecon (https://github.com), etc. to gather additional information related to the target company and its employees from social networking sites.
+
+Close all open windows and document all the acquired information.
+
+Task 3: Gather Information using Followerwonk
+Followerwonk is an online tool that helps you explore and grow your social graph, digging deeper into Twitter analytics; for example, Who are your followers? Where are they located? When do they tweet? This can be used to gather Twitter information about any target organization or individual.
+
+Click Windows 10 to switch to the Windows 10 machine.
+
+Open any web browser (here, Mozilla Firefox). In the address bar of the browser place your mouse cursor, click https://followerwonk.com/analyze and press Enter.
+
+Followerwonk website appears, as shown in the screenshot.
+
+In the Screen Name search bar, type your target individual’s twitter tag (here, @satyanadella) and click the Do it button to analyze the users whom the target person follows.
+
+The results regarding the target appears, as shown in the screenshot.
+
+Scroll down to view the detailed analysis.
+
+This concludes the demonstration of gathering information using Followerwonk.
+
+You can also use Hootsuite (https://hootsuite.com), Sysomos (https://www.sysomos.com), etc. to gather additional information related to the target company and its employees from social networking sites.
+
+Close all open windows and document all the acquired information.
+
+Live Chat
